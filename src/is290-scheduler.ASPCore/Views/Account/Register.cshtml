@@ -5,7 +5,9 @@
 
 <h2>@ViewData["Title"].</h2>
 
-<form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+<h2>Account Registration is disabled.</h2>
+
+@*<form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
     <h4>Create a new account.</h4>
     <hr />
     <div asp-validation-summary="All" class="text-danger"></div>
@@ -35,7 +37,7 @@
             <button type="submit" class="btn btn-default">Register</button>
         </div>
     </div>
-</form>
+</form>*@
 
 @section Scripts {
     @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
