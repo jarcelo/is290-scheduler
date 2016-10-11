@@ -26,6 +26,18 @@ namespace is290_scheduler.ASPMVC
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // Calendar css file
+            bundles.Add(new StyleBundle("~/Content/fullCalendarcss").Include(
+                      "~/Content/theme/jquery-ui-min.css",
+                      "~/Content/fullcalendar.min.css"));
+            // Calendar script file
+            bundles.Add(new ScriptBundle("~/bundles/fullCalendarjs").Include(
+                      "~/Scripts/jquery-ui-{version}.min.js",
+                      "~/Scripts/moment.min.js",
+                      "~/Scripts/fullcalendar.min.js"));
+
+
         }
     }
 }
