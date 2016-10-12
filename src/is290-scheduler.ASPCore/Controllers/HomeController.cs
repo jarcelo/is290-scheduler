@@ -27,6 +27,31 @@ namespace is290_scheduler.ASPCore.Controllers
             return View();
         }
 
+        // for test.html
+        public IActionResult test()
+        {
+            ViewData["Message"] = "test page";
+
+            return View();
+        }
+
+
+        // for NewTest
+        public IActionResult newtest()
+        {
+            ViewData["Message"] = "new test page";
+
+            return View();
+        }
+
+        // for Calendar
+        public IActionResult calendar()
+        {
+            ViewData["Message"] = "Calendar";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

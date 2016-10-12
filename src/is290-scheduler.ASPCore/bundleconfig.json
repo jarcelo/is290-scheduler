@@ -20,5 +20,48 @@
     },
     // Optinally generate .map file
     "sourceMap": false
+  },
+
+  {
+    "outputFileName": "Content/bootstrap.min.css",
+    "inputFiles": [
+      "Content/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/fullcalendar.min.css",
+    "inputFiles": [
+      "Content/fullcalendar.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery-ui-1.8.11.min.js",
+    "inputFiles": [
+      "Scripts/jquery-ui-1.8.11.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  },
+  {
+    "outputFileName": "Scripts/lib/moment/moment.min.js",
+    "inputFiles": [
+      "Scripts/lib/moment/moment.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  },
+  {
+    "inputFiles": [
+      "Scripts/lib/fullcalendar/dist/fullcalendar.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "outputFileName": "Scripts/lib/fullcalendar/dist/fullcalendar.min.js"
   }
 ]
