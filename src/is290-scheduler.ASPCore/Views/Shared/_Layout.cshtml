@@ -10,8 +10,10 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
         <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
         <link href="~/Content/fullcalendar.css" rel="stylesheet" />
         <link href="~/lib/scheduler/codebase/dhtmlxscheduler_glossy.css" rel="stylesheet" />
+        <link href="~/lib/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet" />
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
@@ -54,12 +56,11 @@
     </div>
 
     <environment names="Development">
+        <script src="~/lib/jquery-ui/jquery-ui.js"></script>
         <script src="~/lib/moment/src/moment.js"></script>
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/Scripts/fullcalendar.js"></script>
-
-
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
